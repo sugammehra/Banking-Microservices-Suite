@@ -42,6 +42,7 @@ The project utilizes the following key components and technologies:
 
 
 **CUSTOMER MANAGEMENT SERVICE**
+
 -Create Customer: 	POST http://localhost:8081/customers
 
 -Get all Customers: 	GET http://localhost:8081/customers
@@ -49,32 +50,51 @@ The project utilizes the following key components and technologies:
 -Get Single Customer:	GET http://localhost:8081/customers/customerId
 
 -Update Customer: 	PUT http://localhost:8081/customers/customerId
+
 -Delete Customer: 	DELETE http://localhost:8081/customers/customerId
 
 
 **ACCOUNT MANAGEMENT SERVICE**
+
 -Create Account: 	     POST http://localhost:8082/accounts
+
 -Get all Accounts: 	     GET http://localhost:8082/accounts
+
 -Get Account by Acc no:      GET http://localhost:8082/accounts/accountNumber
+
 -Get Accounts by customerId: GET http://localhost:8082/accounts/customerId
+
 -Add Money to Account:	     PUT http://localhost:8082/accounts/depositMoney
+
 -Withdraw Money from Account:PUT http://localhost:8082/accounts/withdrawMoney
+
 -Delete Account: 	     DELETE http://localhost:8082/accounts/accountNumber
 
 **API GATEWAY**
 All requests to the microservices should be routed through the API Gateway:
 
 -Create Customer:	     POST http://localhost:8083/customers
+
 -Get all Customers: 	     GET http://localhost:8083/customers
+
 -Get Single Customer:	     GET http://localhost:8083/customers/customerId
+
 -Update Customer: 	     PUT http://localhost:8083/customers/customerId
+
 -Delete Customer: 	     DELETE http://localhost:8083/customers/customerId
+
 -Create Account: 	     POST http://localhost:8083/accounts
+
 -Get all Accounts: 	     GET http://localhost:8083/accounts
+
 -Get Account by Acc no:      GET http://localhost:8083/accounts/accountNumber
+
 -Get Accounts by customerId: GET http://localhost:8083/accounts/customerId
+
 -Add Money to Account:	     PUT http://localhost:8083/accounts/depositMoney
+
 -Withdraw Money from Account:PUT http://localhost:8083/accounts/withdrawMoney
+
 -Delete Account: 	     DELETE http://localhost:8083/accounts/accountNumber
 
 ## Conclusion
