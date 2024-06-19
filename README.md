@@ -1,6 +1,4 @@
 # Banking-Microservices-Suite
-microservices project 
-# Microservices Project
 
 ## Overview
 This project demonstrates a microservices-based architecture by creating two interconnected microservices: Customer Management Service and Account Management Service. These services communicate with each other to manage customers and their accounts efficiently.The primary functionalities implemented in this project are:
@@ -45,8 +43,11 @@ The project utilizes the following key components and technologies:
 
 **CUSTOMER MANAGEMENT SERVICE**
 -Create Customer: 	POST http://localhost:8081/customers
+
 -Get all Customers: 	GET http://localhost:8081/customers
+
 -Get Single Customer:	GET http://localhost:8081/customers/customerId
+
 -Update Customer: 	PUT http://localhost:8081/customers/customerId
 -Delete Customer: 	DELETE http://localhost:8081/customers/customerId
 
