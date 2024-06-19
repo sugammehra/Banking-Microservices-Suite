@@ -1,0 +1,36 @@
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: API-GATEWAY
+  
+  cloud:
+    gateway:
+        routes:
+        - id: CUSTOMER-MANAGEMENT-SERVICE
+          uri: lb://CUSTOMER-MANAGEMENT-SERVICE
+          predicates:
+          - Path=/customers/**
+        - id: ACCOUNT-MANAGEMENT-SERVICE
+          uri: lb://ACCOUNT-MANAGEMENT-SERVICE
+          predicates:
+          - Path=/accounts/**
+  #FOR CONFIG MANAGEMENT
+  config:
+    import: optional:configserver:http://localhost:8084
+
+
+
+#EUREKA SERVER CONFIGURATION
+#eureka:
+#    instance:
+#       prefer-ip-address: true 
+#    client:
+#       fetch-registry: true
+#       register-with-eureka: true
+#       service-url:
+#        defaultZone: http://localhost:8761/eureka/
+       
+       
+ 
